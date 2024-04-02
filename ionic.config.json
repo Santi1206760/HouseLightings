@@ -1,0 +1,7 @@
+{
+  "name": "HouseLights",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

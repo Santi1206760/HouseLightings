@@ -1,0 +1,38 @@
+
+
+<ion-content>
+
+  <div class="house-container">
+    <div class="roof"></div>
+    <div class="house-body">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <button ion-button (click)="Estado('cocina')" [ngClass]="{'encendida': luces['cocina'].encendida, 'apagada': !luces['cocina'].encendida}">
+              <p>Cocina</p>
+            </button>
+          </ion-col>
+
+          <ion-col>
+            <button ion-button (click)="Estado('comedor')" [ngClass]="{'encendida': luces['comedor'].encendida, 'apagada': !luces['comedor'].encendida}">
+              <p>Comedor</p>
+            </button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <button ion-button (click)="Estado('dormitorio')" [ngClass]="{'encendida': luces['dormitorio'].encendida, 'apagada': !luces['dormitorio'].encendida}">
+              <p>Dormitorio</p>
+            </button>
+          </ion-col>
+
+          <ion-col>
+            <button ion-button (click)="Estado('oficina')" [ngClass]="{'encendida': luces['oficina'].encendida, 'apagada': !luces['oficina'].encendida}">
+              <p>Oficina</p>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>

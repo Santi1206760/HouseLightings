@@ -1,0 +1,68 @@
+.house-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;  // Ajusta la altura según tu necesidad
+  background-color: #000000;  // Color de fondo gris claro
+
+  .roof {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 80px solid #ffffff;  // Techo de color negro
+    margin-bottom: 20px;
+  }
+
+  .house-body {
+    border: 1px solid #000;  // Borde de color negro
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  // Sombra ligera
+    background-color: #fff;  // Fondo blanco
+
+    ion-grid {
+      width: 100%;
+
+      ion-row {
+        ion-col {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100px;
+
+          button {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &.encendida {
+              background-color: #fff;  // Fondo blanco para encendido
+              color: #000;  // Texto negro para encendido
+            }
+
+            &.apagada {
+              background-color: #000;  // Fondo negro para apagado
+              color: #fff;  // Texto blanco para apagado
+            }
+
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
